@@ -47,35 +47,35 @@ Type *parse_type_base(ParserContext *ctx, Lexer *l)
             char *resolved_suffix = suffix;
 
             // Map Zen Primitive suffixes to C types to match Generic Instantiation
-            if (strcmp(suffix, "I32") == 0)
+            if (strcmp(suffix, "I32") == 0 || strcmp(suffix, "i32") == 0)
             {
                 resolved_suffix = "int32_t";
             }
-            else if (strcmp(suffix, "U32") == 0)
+            else if (strcmp(suffix, "U32") == 0 || strcmp(suffix, "u32") == 0)
             {
                 resolved_suffix = "uint32_t";
             }
-            else if (strcmp(suffix, "I8") == 0)
+            else if (strcmp(suffix, "I8") == 0 || strcmp(suffix, "i8") == 0)
             {
                 resolved_suffix = "int8_t";
             }
-            else if (strcmp(suffix, "U8") == 0)
+            else if (strcmp(suffix, "U8") == 0 || strcmp(suffix, "u8") == 0)
             {
                 resolved_suffix = "uint8_t";
             }
-            else if (strcmp(suffix, "I16") == 0)
+            else if (strcmp(suffix, "I16") == 0 || strcmp(suffix, "i16") == 0)
             {
                 resolved_suffix = "int16_t";
             }
-            else if (strcmp(suffix, "U16") == 0)
+            else if (strcmp(suffix, "U16") == 0 || strcmp(suffix, "u16") == 0)
             {
                 resolved_suffix = "uint16_t";
             }
-            else if (strcmp(suffix, "I64") == 0)
+            else if (strcmp(suffix, "I64") == 0 || strcmp(suffix, "i64") == 0)
             {
                 resolved_suffix = "int64_t";
             }
-            else if (strcmp(suffix, "U64") == 0)
+            else if (strcmp(suffix, "U64") == 0 || strcmp(suffix, "u64") == 0)
             {
                 resolved_suffix = "uint64_t";
             }
@@ -123,52 +123,52 @@ Type *parse_type_base(ParserContext *ctx, Lexer *l)
             free(name);
             return type_new(TYPE_VOID);
         }
-        if (strcmp(name, "I8") == 0)
+        if (strcmp(name, "I8") == 0 || strcmp(name, "i8") == 0)
         {
             free(name);
             return type_new(TYPE_I8);
         }
-        if (strcmp(name, "U8") == 0)
+        if (strcmp(name, "U8") == 0 || strcmp(name, "u8") == 0)
         {
             free(name);
             return type_new(TYPE_U8);
         }
-        if (strcmp(name, "I16") == 0)
+        if (strcmp(name, "I16") == 0 || strcmp(name, "i16") == 0)
         {
             free(name);
             return type_new(TYPE_I16);
         }
-        if (strcmp(name, "U16") == 0)
+        if (strcmp(name, "U16") == 0 || strcmp(name, "u16") == 0)
         {
             free(name);
             return type_new(TYPE_U16);
         }
-        if (strcmp(name, "I32") == 0)
+        if (strcmp(name, "I32") == 0 || strcmp(name, "i32") == 0)
         {
             free(name);
             return type_new(TYPE_I32);
         }
-        if (strcmp(name, "U32") == 0)
+        if (strcmp(name, "U32") == 0 || strcmp(name, "u32") == 0)
         {
             free(name);
             return type_new(TYPE_U32);
         }
-        if (strcmp(name, "I64") == 0)
+        if (strcmp(name, "I64") == 0 || strcmp(name, "i64") == 0)
         {
             free(name);
             return type_new(TYPE_I64);
         }
-        if (strcmp(name, "U64") == 0)
+        if (strcmp(name, "U64") == 0 || strcmp(name, "u64") == 0)
         {
             free(name);
             return type_new(TYPE_U64);
         }
-        if (strcmp(name, "F32") == 0)
+        if (strcmp(name, "F32") == 0 || strcmp(name, "f32") == 0)
         {
             free(name);
             return type_new(TYPE_F32);
         }
-        if (strcmp(name, "F64") == 0)
+        if (strcmp(name, "F64") == 0 || strcmp(name, "f64") == 0)
         {
             free(name);
             return type_new(TYPE_F64);
@@ -188,12 +188,12 @@ Type *parse_type_base(ParserContext *ctx, Lexer *l)
             free(name);
             return type_new(TYPE_BYTE);
         }
-        if (strcmp(name, "I128") == 0)
+        if (strcmp(name, "I128") == 0 || strcmp(name, "i128") == 0)
         {
             free(name);
             return type_new(TYPE_I128);
         }
-        if (strcmp(name, "U128") == 0)
+        if (strcmp(name, "U128") == 0 || strcmp(name, "u128") == 0)
         {
             free(name);
             return type_new(TYPE_U128);

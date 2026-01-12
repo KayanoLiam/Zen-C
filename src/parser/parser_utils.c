@@ -1021,43 +1021,43 @@ Type *replace_type_formal(Type *t, const char *p, const char *c, const char *os,
             return type_new(TYPE_CHAR);
         }
 
-        if (strcmp(c, "I8") == 0)
+        if (strcmp(c, "I8") == 0 || strcmp(c, "i8") == 0)
         {
             return type_new(TYPE_I8);
         }
-        if (strcmp(c, "U8") == 0)
+        if (strcmp(c, "U8") == 0 || strcmp(c, "u8") == 0)
         {
             return type_new(TYPE_U8);
         }
-        if (strcmp(c, "I16") == 0)
+        if (strcmp(c, "I16") == 0 || strcmp(c, "i16") == 0)
         {
             return type_new(TYPE_I16);
         }
-        if (strcmp(c, "U16") == 0)
+        if (strcmp(c, "U16") == 0 || strcmp(c, "u16") == 0)
         {
             return type_new(TYPE_U16);
         }
-        if (strcmp(c, "I32") == 0)
+        if (strcmp(c, "I32") == 0 || strcmp(c, "i32") == 0)
         {
             return type_new(TYPE_I32);
         }
-        if (strcmp(c, "U32") == 0)
+        if (strcmp(c, "U32") == 0 || strcmp(c, "u32") == 0)
         {
             return type_new(TYPE_U32);
         }
-        if (strcmp(c, "I64") == 0)
+        if (strcmp(c, "I64") == 0 || strcmp(c, "i64") == 0)
         {
             return type_new(TYPE_I64);
         }
-        if (strcmp(c, "U64") == 0)
+        if (strcmp(c, "U64") == 0 || strcmp(c, "u64") == 0)
         {
             return type_new(TYPE_U64);
         }
-        if (strcmp(c, "F32") == 0)
+        if (strcmp(c, "F32") == 0 || strcmp(c, "f32") == 0)
         {
             return type_new(TYPE_F32);
         }
-        if (strcmp(c, "F64") == 0)
+        if (strcmp(c, "F64") == 0 || strcmp(c, "f64") == 0)
         {
             return type_new(TYPE_F64);
         }
@@ -1074,11 +1074,11 @@ Type *replace_type_formal(Type *t, const char *p, const char *c, const char *os,
         {
             return type_new(TYPE_BYTE);
         }
-        if (strcmp(c, "I128") == 0)
+        if (strcmp(c, "I128") == 0 || strcmp(c, "i128") == 0)
         {
             return type_new(TYPE_I128);
         }
-        if (strcmp(c, "U128") == 0)
+        if (strcmp(c, "U128") == 0 || strcmp(c, "u128") == 0)
         {
             return type_new(TYPE_U128);
         }
