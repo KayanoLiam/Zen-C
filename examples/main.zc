@@ -1,0 +1,4 @@
+fn main() {
+    var num: U32 = 42;
+    puts(f"The answer is: {num}");
+}
