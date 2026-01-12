@@ -1553,7 +1553,7 @@ char *process_fstring(ParserContext *ctx, const char *content)
             {
                 depth--;
             }
-            if (depth == 1 && *p == ':' && !colon)
+            if (depth == 1 && *p == ':' && !colon && *(p + 1) != ':')
             {
                 colon = p;
             }
