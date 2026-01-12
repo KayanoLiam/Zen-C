@@ -1,10 +1,8 @@
+import "curl/curl.h" as CURL
+
+
 fn main() {
-    var num: u32 = 42;
-    var num1: i32 = -7;
-    var sum: i32 = add(num, num1);
-    puts(f"The answer is: {sum}");
+    var version = CURL.curl_version()
+    println "Linked with CURL '{version}'"
 }
 
-fn add(x: u32, y: i32) -> i32 {
-    return x + y;
-}

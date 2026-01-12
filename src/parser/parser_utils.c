@@ -1553,7 +1553,8 @@ char *process_fstring(ParserContext *ctx, const char *content)
             {
                 depth--;
             }
-            if (depth == 1 && *p == ':' && !colon)
+            // Check for format separator ':', but ignore namespace operator '::'
+            if (depth == 1 && *p == ':' && !colon && *(p + 1) != ':')
             {
                 colon = p;
             }
